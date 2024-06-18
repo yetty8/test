@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Three Musketeers</title>
+    <style>
+        body {
+              font-family: sans-serif;
+              background: rgb(253,219,29);
+              background: linear-gradient(90deg,
+               rgba(253,219,29,0.9373645231213873) 1%, 
+               rgba(180,58,154,1) 61%, rgba(252,176,69,1) 100%);
+        }
+        
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(64, 46, 46, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.musketeers-title {
+  color: #cf330c;
+  display: grid;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  padding: 0;
+  text-transform: uppercase;
+  border-radius: 0;
+  justify-content: center;
+  grid-template-columns: repeat(6, 2.8rem);
+  grid-auto-rows: 2.8rem;
+  
+}  
+*{
+    box-sizing: inherit;
+}
+h1{
+    font-size: 1.75em;
+    line-height: 1.2;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
+
+  
+ /* First thing change px to percentage or em  */
+    @media screen and (max-width: 425px) {
+        header {
+            flex-direction: column;
+            margin-top: 1.5em;
+        }
+        .container {
+            flex-direction: column;
+        }
+        .card {
+            width: 90%;
+            .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(100, 48, 48);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+
+ /* First thing change px to percentage or em  */
+    @media screen and (max-width: 425px) {
+        header {
+            flex-direction: column;
+            margin-top: 1.5em;
+        }
+        .container {
+            flex-direction: column;
+        }
+        .card {
+            width: 90%;
+            flex-grow: 1;
+        }
+        .secondary-title {
+            font-size: 0.7em;
+        }
+        .card img {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: 1343px) and (min-width: 426px) {
+        .card {
+            width: 22%;
+        }
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .nav-item {
+        margin: 0 0.5px;
+    }
+
+    .nav-item a {
+        color: white;
+        background-color: rgb(58, 87, 57);
+        text-decoration: none;
+        padding: 0.7em 1em;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .nav-item a:hover {
+        background-color: #555;
+    }
+    /* Basic syntax */
+    /* @media {media-type} and (condition) { */
+        /* CSS rules here  0 to 425px */
+        }
+        .secondary-title {
+            font-size: 0.7em;
+        }
+        .card img {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: 1343px) and (min-width: 426px) {
+        .card {
+            width: 22%;
+        }
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .nav-item {
+        margin: 0 0.5px;
+    }
+
+    .nav-item a {
+        color: white;
+        background-color: rgb(157, 83, 83);
+        text-decoration: none;
+        padding: 0.7em 1em;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .nav-item a:hover {
+        background-color: #555;
+    }
+    /* Basic syntax */
+    /* @media {media-type} and (condition) { */
+        /* CSS rules here  0 to 425px */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="musketeers-title">
+            
+            <span>T</span>
+            <span>H</span>
+            <span>E</span>
+            <span class="span-1">&nbsp;</span>
+            <span>T</span>
+            <span>H</span>
+            <span>R</span>
+            <span>E</span>
+            <span>E</span>
+            <span class="span-2">&nbsp;</span>
+            <span>M</span>
+            <span>U</span>
+            <span>S</span>
+            <span>K</span>
+            <span>E</span>
+            <span>T</span>
+            <span>E</span>
+            <span>E</span>
+            <span>R</span>
+            <span>S</span>
+        </h1>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="./home.html">Home</a></li>
+                <li class="nav-item"><a href="./vidoe.html">Video</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a href="./story.html">Story</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p class="secondary-title" style="text-align:center;">Animals have come to mean so much in our lives. A dog is the only thing 
+        on earth that loves you more than you love yourself. When the dog looks 
+        at you, the dog is not thinking what kind of a person you are.</p>
+    <div class="container">
+
+        <div class="card">
+            <a href="./Prince.html"><img src="./css/images 2/image/prince.png" alt="Prince"></a>
+            
+            <div class="title">Prince</div>
+        </div>
+        <div class="card">
+            
+            <a href="./Coco.html"><img src="./css/images 2/image/Coco2.png" alt="Coco"></a>
+            <div class="title">Coco</div>
+        </div>
+        <div class="card">
+            <a href="./Hazel.html"><img src="./css/images 2/hazelinsnow.png" alt="Hazel"></a>
+            <div class="title">Hazel</div>
+        </div>
+        <div class="card">
+            <img src="./css/images 2/image/princeincar.png" alt="1">
+        </div>
+        <div class="card">
+            <img src="./css/images 2/image/cocostick.png" alt="2">
+        </div>
+        <div class="card">
+           <img src="./css/images 2/hazelflower.png" alt="3"> 
+        </div>
+    </div>
+    
+</body>
+</html>
